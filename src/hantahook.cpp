@@ -1,5 +1,6 @@
-#include "definations.hpp"
+#include "pch.hpp"
 
+// Thanks to fuzion project
 /**
  * @file hantahook.cpp
  * @author Pritam Dutta (rohitdutta907@gmail.com)
@@ -10,22 +11,29 @@
  * @copyright Copyright (c) 2021
  */
 
-/**
- * @brief Main thread to hook our program
- * 
- */
 static void Main_Thread();
-
 
 /* Entrypoint to the Library. Called when loading */
 int __attribute__((constructor)) Start()
 {
-	std::thread main_thread(Main_Thread);
-	main_thread.detach();
+	std::thread main(Main_Thread);
+	main.detach();
 
+	// cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nHantaHook Successfully loaded.\n"));
 	return 0;
 }
 
-static void Main_Thread(){
+/* Called when un-injecting the library */
+void __attribute__((destructor)) Shutdown()
+{
+	cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nHantaHook Successfully unloaded.\n"));
+	Hook::unhook();
+}
 
+static void Main_Thread(){
+    
+	Hook::start_hooking();
+	
+	cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("HantaHook Successfully loaded.\n"));
+	// cvar->ConsoleDPrintf(XORSTR("Done"));
 }

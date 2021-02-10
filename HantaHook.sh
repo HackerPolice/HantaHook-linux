@@ -17,11 +17,11 @@ function launch_csgo() {
   echo_orange "Launching CSGO"
   steam steam://rungameid/730 >/dev/null 2>&1 &
   disown
-  echo_green -ne "Launching..."
+  echo -ne "Launching..."
   while [ -z "$csgo_pid" ]; 
   do
     csgo_pid=$(pidof csgo_linux64)
-    echo_green -ne "."
+    echo -ne "."
   done
 
   echo " "
@@ -156,7 +156,7 @@ function load(){
 function unload(){
   # Credit: Aixxe @ aixxe.net
   csgo_pid=$(pidof csgo_linux64)
-  filename=$(cat build_id)
+  filename=$(cat .build_id)
   filename_old=$(cat .build_id_old)
 
   if [ -f .build_id ]; then
@@ -214,6 +214,10 @@ function clean(){
   rm ./.build_id_old
 }
 
+function reverce_update(){
+  git reset --hard
+}
+
 function __main__(){
   local option="$1"
   sudo -v ## asking for root permission
@@ -235,12 +239,16 @@ function __main__(){
         echo_orange "Cleaning the mess :)"
         clean
       ;;
+      -ru|--reverce-update)
+      reverce_update
+      ;;
       *)
         echo_red "Unknown Command $option || use -h for help"
       ;;
   esac
 }
 
+#dor loop not working
 while [[ $# -gt 0 ]]
 do
   __main__ $1
