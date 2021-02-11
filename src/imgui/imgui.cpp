@@ -6125,7 +6125,6 @@ void ImGui::EndChildFrame()
 }
 
 static ImVector<ImRect> s_GroupPanelLabelStack;
-static char Chilename[] = "child1";
 
 void ImGui::BeginGroupPanel(const char *name, const ImVec2 &size)
 {
@@ -10669,8 +10668,7 @@ static const char *PatchFormatStringFloatToInt(const char *fmt)
 	return fmt;
 }
 
-bool ImGui::SliderScalar(const char *label, ImGuiDataType data_type, void *v, const void *v_min, const void *v_max,
-                         const char *format, float power)
+bool ImGui::SliderScalar(const char *label, ImGuiDataType data_type, void *v, const void *v_min, const void *v_max, const char *format, float power)
 {
 	ImGuiWindow *window = GetCurrentWindow();
 	if (window->SkipItems) {
@@ -11633,6 +11631,9 @@ bool ImGui::CheckboxFill(const char *label, bool *v)
 	if (label_size.x > 0.0f) {
 		RenderText(text_bb.Min, label);
 	}
+
+	ImGui::SameLine();
+	ImGui::Text(label+2);
 
 	return pressed;
 }
@@ -16007,120 +16008,9 @@ void ImGui::ShowMetricsWindow(bool *p_open)
 #include "imgui_user.inl"
 #endif
 
-//-----------------------------------------------------------------------------
 
-bool ImGui::Tab(const char *label, bool selected)
-{
-	ImGuiWindow *window = ImGui::GetCurrentWindow();
-	if (window->SkipItems) {
-		return false;
-	}
 
-	ImGuiContext &g = *GImGui;
-	const ImGuiStyle &style = g.Style;
-	const ImGuiID id = window->GetID(label);
-	const ImVec2 label_size = ImGui::CalcTextSize(label, NULL, true);
 
-	ImVec2 pos = window->DC.CursorPos;
-	ImVec2 size = ImGui::CalcItemSize(ImVec2(120, 40), label_size.x + style.FramePadding.x * 2.0f,
-	                                  label_size.y + style.FramePadding.y * 2.0f);
 
-	const ImRect bb(pos, pos + size);
-	ImGui::ItemSize(size, style.FramePadding.y);
-	if (!ImGui::ItemAdd(bb, id)) {
-		return false;
-	}
 
-	bool hovered, held;
-	bool pressed = ImGui::ButtonBehavior(bb, id, &hovered, &held);
 
-	if (hovered || held) {
-		ImGui::SetMouseCursor(7);
-	}
-
-	if (selected) {
-		window->DrawList->AddRectFilled(ImVec2(bb.Min.x - 3, bb.Min.y - 1), ImVec2(bb.Max.x + 3, bb.Max.y + 0),
-		                                ImColor(220, 60, 40, 255), 8, 3);
-	} else {
-		if (!hovered) {
-			window->DrawList->AddRectFilled(ImVec2(bb.Min.x + 0, bb.Min.y + 0), ImVec2(bb.Max.x + 0, bb.Max.y + 0),
-			                                ImColor(160, 30, 30, 255));
-		} else {
-			window->DrawList->AddRectFilled(ImVec2(bb.Min.x + 0, bb.Min.y + 0), ImVec2(bb.Max.x + 0, bb.Max.y + 0),
-			                                ImColor(190, 45, 35, 255));
-		}
-	}
-
-	ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(229 / 255.f, 229 / 255.f, 229 / 255.f, 255 / 255.f));
-	ImGui::RenderText(ImVec2(bb.Min.x + 0 + (105 / 2 - label_size.x / 3), bb.Min.y + style.FramePadding.y + 12), label);
-	ImGui::PopStyleColor();
-
-	return pressed;
-}
-
-bool ImGui::Sub(const char *label, bool selected)
-{
-	ImGuiWindow *window = ImGui::GetCurrentWindow();
-	if (window->SkipItems) {
-		return false;
-	}
-
-	ImGuiContext &g = *GImGui;
-	const ImGuiStyle &style = g.Style;
-	const ImGuiID id = window->GetID(label);
-	const ImVec2 label_size = ImGui::CalcTextSize(label, NULL, true);
-	auto draw = ImGui::GetWindowDrawList();
-
-	ImVec2 pos = window->DC.CursorPos;
-	ImVec2 size = ImGui::CalcItemSize(ImVec2(157, 40), label_size.x + style.FramePadding.x * 2.0f,
-	                                  label_size.y + style.FramePadding.y * 2.0f);
-
-	const ImRect bb(pos, pos + size);
-	ImGui::ItemSize(size, style.FramePadding.y);
-	if (!ImGui::ItemAdd(bb, id)) {
-		return false;
-	}
-
-	bool hovered, held;
-	bool pressed = ImGui::ButtonBehavior(bb, id, &hovered, &held, NULL);
-
-	if (hovered || held) {
-		ImGui::SetMouseCursor(7);
-	}
-
-	if (selected) {
-		window->DrawList->AddRectFilled(ImVec2(bb.Min.x - 3, bb.Min.y - 1), ImVec2(bb.Max.x + 3, bb.Max.y + 0),
-		                                ImColor(43, 43, 40, 255));
-		draw->AddRectFilled(ImVec2(bb.Min.x - 0, bb.Min.y - 1), ImVec2(bb.Max.x - 147, bb.Max.y + 0),
-		                    ImColor(200, 45, 35));
-	} else {
-		if (!hovered) {
-			window->DrawList->AddRectFilled(ImVec2(bb.Min.x + 0, bb.Min.y + 0), ImVec2(bb.Max.x + 0, bb.Max.y + 0),
-			                                ImColor(32, 31, 32, 0));
-		} else {
-			window->DrawList->AddRectFilled(ImVec2(bb.Min.x + 0, bb.Min.y + 0), ImVec2(bb.Max.x + 0, bb.Max.y + 0),
-			                                ImColor(32, 31, 32, 255));
-		}
-	}
-
-	if (selected) {
-		ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(200 / 255.f, 45 / 255.f, 35 / 255.f, 255 / 255.f));
-		ImGui::RenderText(ImVec2(bb.Min.x + 0 + (105 / 2 - label_size.x / 2), bb.Min.y + style.FramePadding.y + 10),
-		                  label);
-		ImGui::PopStyleColor();
-	} else {
-		if (!hovered) {
-			ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(255 / 255.f, 255 / 255.f, 255 / 255.f, 255 / 255.f));
-			ImGui::RenderText(ImVec2(bb.Min.x + 0 + (105 / 2 - label_size.x / 2), bb.Min.y + style.FramePadding.y + 10),
-			                  label);
-			ImGui::PopStyleColor();
-		} else {
-			ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(255 / 255.f, 255 / 255.f, 255 / 255.f, 255 / 255.f));
-			ImGui::RenderText(ImVec2(bb.Min.x + 0 + (105 / 2 - label_size.x / 2), bb.Min.y + style.FramePadding.y + 10),
-			                  label);
-			ImGui::PopStyleColor();
-		}
-	}
-	return pressed;
-
-}

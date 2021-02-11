@@ -3,6 +3,7 @@
 void Hook::start_hooking(){
     Hook_ImGui::hook_imgui();
     Interfaces::find_interfaces();
+    Interfaces::show_address();
 }
 
 void Hook::unhook(){

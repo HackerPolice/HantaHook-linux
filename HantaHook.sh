@@ -218,6 +218,13 @@ function reverce_update(){
   git reset --hard
 }
 
+function kill_process(){
+  sudo killall -9 csgo_linux64
+  sudo killall -9 csgo.sh
+  sudo killall -9 gdb
+  # sudo killall -9 steam
+}
+
 function __main__(){
   local option="$1"
   sudo -v ## asking for root permission
@@ -241,6 +248,9 @@ function __main__(){
       ;;
       -ru|--reverce-update)
       reverce_update
+      ;;
+      -k|--kill)
+      kill_process
       ;;
       *)
         echo_red "Unknown Command $option || use -h for help"

@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-rm -rf ./CMakeFiles
-rm ./CMakeCache.txt
-rm ./Makefile
-rm ./build_id_hex
-
-filename = $(cat build_id)
-rm "$filename"

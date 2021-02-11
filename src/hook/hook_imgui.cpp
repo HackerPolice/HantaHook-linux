@@ -10,8 +10,6 @@ uintptr_t oPollEvent;
 uintptr_t *polleventJumpAddress;
 SDL_PollEvent_t oSDL_PollEvent;
 
-static bool visible = false;
-
 typedef int (*eventFilterFn)(void *, SDL_Event *);
 
 eventFilterFn origEventFilter;
@@ -95,26 +93,23 @@ static void SwapWindow(SDL_Window *window)
 	ImGuiIO &io = ImGui::GetIO();
 	// Setup display size (every frame to accommodate for window resizing)
 	int w, h;
-	//int display_w, display_h;
 	SDL_GetWindowSize(window, &w, &h);
-	//SDL_GL_GetDrawableSize(window, &display_w, &display_h);
-	// Paint::windowWidth = w;
-	// Paint::windowHeight = h;
-	io.DisplaySize = ImVec2((float) w, (float) h);
-	//io.DisplayFramebufferScale = ImVec2( 1, 1 );
+
+	io.DisplaySize = ImVec2( w,  h);
+	
 
 	ImGui_ImplOpenGL3_NewFrame();
 
 	static double lastTime = 0.0f;
-	Uint32 time = SDL_GetTicks();
+	static Uint32 time = SDL_GetTicks();
 	double currentTime = time / 1000.0;
 	io.DeltaTime = lastTime > 0.0 ? (float) (currentTime - lastTime) : (float) (1.0f / 60.0f);
 
-	io.MouseDrawCursor = visible;
-	io.WantCaptureMouse = visible;
-	io.WantCaptureKeyboard = visible;
+	io.MouseDrawCursor = settings::Gui::is_visible;
+	io.WantCaptureMouse = settings::Gui::is_visible;
+	io.WantCaptureKeyboard = settings::Gui::is_visible;
 
-	if (visible /*&& !SetKeyCodeState::shouldListen*/) {
+	if (settings::Gui::is_visible /*&& !SetKeyCodeState::shouldListen*/) {
 		SDL_Event event;
 
 		while (SDL_PollEvent(&event)) {
@@ -133,34 +128,25 @@ static void SwapWindow(SDL_Window *window)
 		io.MousePos = ImVec2((float) mx, (float) my);
 	}
 	SDL_ShowCursor(io.MouseDrawCursor ? 0 : 1);
+	cvar->FindVar(XORSTR("cl_mouseenable"))->SetValue(!settings::Gui::is_visible);
 
-	// if (Settings::UI::uitype == UiType::LagacyMenu) {
-	// 	UI::SetupLagacyColor();
-	// } else {
-	// 	UI::SetupAimwareColor();
-	// }
-	// if (!UI::isVisible)
-	// {
+	Gui::set_up_color();
+
 	ImGui::NewFrame();
 	ImGui::SetNextWindowPos(ImVec2(0, 0), ImGuiCond_Always);
 	ImGui::SetNextWindowSize(ImVec2(w, h), ImGuiCond_Always);
 	ImGui::SetNextWindowBgAlpha(0.0f);
 	ImGuiStyle &style = ImGui::GetStyle();
 	style.WindowBorderSize = 0.0f;
-	ImGui::Begin(XORSTR("##mainFrame"), (bool *) true,
+	ImGui::Begin(XORSTR("##default_frame"), (bool *) true,
 	             ImGuiWindowFlags_AlwaysUseWindowPadding | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoMove |
 	             ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoSavedSettings | ImGuiColumnsFlags_NoBorder |
 	             ImGuiWindowFlags_NoResize);
-	
-	static float a = 10;
-	if (visible)
-		ImGui::SliderFloat(XORSTR("Test"), &a, 10, 100);
-	// UI::DrawImWatermark();
-	// UI::DrawMenuSelector();
-	// UI::SetupWindows();
-	// UI::angleIndicator();
-	// //UI::DrawImWatermark();
-	// Hooks::PaintImGui(); // Process ImGui Draw Commands
+
+		if (settings::Gui::is_visible){
+			Gui::render_main_window();
+		}
+		
 	ImGui::End();
 
 	ImGui::EndFrame();
@@ -176,12 +162,8 @@ static void SwapWindow(SDL_Window *window)
 
 static int PollEvent(SDL_Event *event)
 {
-	if (((event->key.keysym.sym == SDLK_INSERT && event->type == SDL_KEYDOWN))
-	    || ((event->key.keysym.mod & KMOD_LALT) && event->key.keysym.sym == SDLK_i && event->type == SDL_KEYDOWN)) {
-		
-		visible = !visible;
-		// Util::Log("setting menu %s\n", UI::isVisible ? "open" : "closed" );
-	}
+	if ( (event->key.keysym.sym == SDLK_INSERT && event->type == SDL_KEYDOWN) )
+		settings::Gui::is_visible = !settings::Gui::is_visible;
 	
 	return oSDL_PollEvent(event);
 }

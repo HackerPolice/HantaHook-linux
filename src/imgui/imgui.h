@@ -150,6 +150,13 @@ struct ImVec2
 	{
 		return ImVec2(this->x / val, this->y / val);
 	}    // We very rarely use this [] operator, the assert overhead is fine.
+
+	ImVec2 operator+(const ImVec2 &t){
+		return ImVec2(this->x + t.x, this->y + t.y);
+	}
+	ImVec2 operator-(const ImVec2 &t){
+		return ImVec2(this->x - t.x, this->y - t.y);
+	}
 #ifdef IM_VEC2_CLASS_EXTRA
 	IM_VEC2_CLASS_EXTRA     // Define additional constructors and implicit cast operators in imconfig.h to convert back and forth between your math types and ImVec2.
 #endif
@@ -246,13 +253,21 @@ namespace ImGui
 	IMGUI_API void EndChild();
 
 	IMGUI_API void BeginGroupPanel(const char *name, const ImVec2 &size = ImVec2(-1.0f, -1.0f));
-
 	IMGUI_API void BeginGroupPanel2(const char *name, const ImVec2 &size = ImVec2(-1.0f, -1.0f));
 
 	IMGUI_API void EndGroupPanel();
-
 	IMGUI_API void EndGroupPanel2();
 
+	IMGUI_API bool BeginTabs(const char* str_id, const ImVec2 & size_arg, bool border, int extra_flags = 0);
+	IMGUI_API bool BeginTabsEx(const char* name, ImGuiID id, const ImVec2 & size_arg, bool border, int flags = 0);
+	IMGUI_API bool BeginTabsBackground(const char* name, bool* p_open, ImGuiWindowFlags flags);
+	
+	IMGUI_API void EndTabs();
+
+	IMGUI_API bool ColorBar(const char* label, const ImVec2& size_arg, int flags = 0);
+	IMGUI_API bool Tab(const char* label, const ImVec2& size_arg);
+	IMGUI_API bool TabEx(const char* label, const ImVec2& size_arg, int flags = 0);
+	IMGUI_API void MarkItemEdited(ImGuiID id);
 	// Windows Utilities
 	IMGUI_API bool IsWindowAppearing();
 
@@ -635,7 +650,10 @@ namespace ImGui
 
 	IMGUI_API bool SliderFloat4(const char *label, float v[4], float v_min, float v_max, const char *format = "%.3f",
 	                            float power = 1.0f);
-
+	
+	IMGUI_API void ColorPicker(const char* name, float* color, bool alpha);
+	IMGUI_API void InsertSliderWithoutText(const char *label, float *v, float v_min, float v_max, const char *format = "%.3f",
+	                           float power = 1.0f);
 	IMGUI_API bool
 	SliderAngle(const char *label, float *v_rad, float v_degrees_min = -360.0f, float v_degrees_max = +360.0f);
 

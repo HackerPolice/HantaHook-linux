@@ -16,8 +16,8 @@ static void Main_Thread();
 /* Entrypoint to the Library. Called when loading */
 int __attribute__((constructor)) Start()
 {
-	std::thread main(Main_Thread);
-	main.detach();
+	std::thread (Main_Thread).detach();
+	// main.detach();
 
 	// cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nHantaHook Successfully loaded.\n"));
 	return 0;
@@ -26,7 +26,7 @@ int __attribute__((constructor)) Start()
 /* Called when un-injecting the library */
 void __attribute__((destructor)) Shutdown()
 {
-	cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nHantaHook Successfully unloaded.\n"));
+	cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("HantaHook Successfully unloaded.\n"));
 	Hook::unhook();
 }
 

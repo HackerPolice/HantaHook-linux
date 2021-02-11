@@ -14,7 +14,8 @@ namespace Hook
     
     namespace Interfaces{
         void find_interfaces();
-
+        void show_address();
+        
         void free_interfaces();
     };
     
