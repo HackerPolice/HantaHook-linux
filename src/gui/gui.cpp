@@ -7,7 +7,6 @@ void Gui::log(){
 }
 void Gui::SetVisible(bool view){
 	settings::Gui::is_visible = view;
-	// SDL_ShowCursor(!settings::Gui::is_visible);
 }
 
 void Gui::set_up_color(){

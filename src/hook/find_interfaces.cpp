@@ -1,11 +1,11 @@
 #include "../pch.hpp"
 
 
-void Hook::Interfaces::find_interfaces(){
+void Interfaces::find_interfaces(){
     cvar = GetInterface<ICvar>(XORSTR("./bin/linux64/materialsystem_client.so"), XORSTR("VEngineCvar"));
 }
 
-void Hook::Interfaces::show_address(){
+void Interfaces::show_address(){
     if (!cvar)
         return;
 
@@ -14,6 +14,6 @@ void Hook::Interfaces::show_address(){
 
 
 }
-void Hook::Interfaces::free_interfaces(){
+void Interfaces::free_interfaces(){
     free(cvar);
 }

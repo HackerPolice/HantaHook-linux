@@ -1,5 +1,8 @@
 #include "../pch.hpp"
 #include <mutex>
+
+typedef int (*SDL_PollEvent_t)(SDL_Event *);
+typedef void (*SDL_GL_SwapWindow_t)(SDL_Window *);
 typedef int (*SDL_PollEvent_t)(SDL_Event *);
 
 uintptr_t oSwapWindow;
@@ -110,19 +113,18 @@ static void SwapWindow(SDL_Window *window)
 	io.WantCaptureMouse = settings::Gui::is_visible;
 	io.WantCaptureKeyboard = settings::Gui::is_visible;
 
-	if (settings::Gui::is_visible /*&& !SetKeyCodeState::shouldListen*/) {
-		SDL_Event event;
+	// if (settings::Gui::is_visible /*&& !SetKeyCodeState::shouldListen*/) {
+	// 	SDL_Event event;
 
-		while (SDL_PollEvent(&event)) {
-			if (event.type == SDL_QUIT) {
-				return;
-			}
+	// 	while (SDL_PollEvent(&event)) {
+	// 		if (event.type == SDL_QUIT) {
+	// 			return;
+	// 		}
 
-			HandleSDLEvent(&event);
-		}
-	}
+	// 		HandleSDLEvent(&event);
+	// 	}
+	// }
 
-	cvar->FindVar(XORSTR("cl_mouseenable"))->SetValue(!settings::Gui::is_visible);
 	if (io.WantCaptureMouse) {
 		int mx, my;
 		SDL_GetMouseState(&mx, &my);
@@ -166,16 +168,20 @@ static int PollEvent(SDL_Event *event)
 	if ( (event->key.keysym.sym == SDLK_INSERT && event->type == SDL_KEYDOWN) ){
 		Gui::SetVisible(!settings::Gui::is_visible);
 	}
-		
+
+	if (settings::Gui::is_visible /*&& !SetKeyCodeState::shouldListen*/) {
+
+		HandleSDLEvent(event);
+	}	
 	return oSDL_PollEvent(event);
 }
 
-void Hook::Hook_ImGui::hook_imgui(){
+void Hook_ImGui::hook_imgui(){
 	hook_swap_window();
 	hook_poll_event();
 }
 
-void Hook::Hook_ImGui::hook_swap_window() // Crash Fix 2021 Update thanks to FilipeSilvens > https://github.com/FilipeSilvens
+void Hook_ImGui::hook_swap_window() // Crash Fix 2021 Update thanks to FilipeSilvens > https://github.com/FilipeSilvens
 {
 	uintptr_t swapwindowFn = reinterpret_cast<uintptr_t>(dlsym(RTLD_NEXT, "SDL_GL_SwapWindow")) + 1;
 	swapWindowJumpAddress = reinterpret_cast<uintptr_t *>(GetAbsoluteAddress(swapwindowFn, 1, 5));
@@ -183,7 +189,7 @@ void Hook::Hook_ImGui::hook_swap_window() // Crash Fix 2021 Update thanks to Fil
 	oSDL_GL_SwapWindow = reinterpret_cast<SDL_GL_SwapWindow_t>(oSwapWindow);
 	*swapWindowJumpAddress = reinterpret_cast<uintptr_t>(&SwapWindow);
 }
-void Hook::Hook_ImGui::hook_poll_event() // Crash Fix 2021 Update thanks to FilipeSilvens > https://github.com/FilipeSilvens
+void Hook_ImGui::hook_poll_event() // Crash Fix 2021 Update thanks to FilipeSilvens > https://github.com/FilipeSilvens
 {
 	uintptr_t polleventFn = reinterpret_cast<uintptr_t>(dlsym(RTLD_NEXT, "SDL_PollEvent")) + 1;
 	polleventJumpAddress = reinterpret_cast<uintptr_t *>(GetAbsoluteAddress(polleventFn, 1, 5));
@@ -192,11 +198,11 @@ void Hook::Hook_ImGui::hook_poll_event() // Crash Fix 2021 Update thanks to Fili
 	*polleventJumpAddress = reinterpret_cast<uintptr_t>(&PollEvent);
 }
 
-void Hook::Hook_ImGui::unhook_window()
+void Hook_ImGui::unhook_window()
 {
 	*swapWindowJumpAddress = oSwapWindow;
 }
-void Hook::Hook_ImGui::unhook_poll_event()
+void Hook_ImGui::unhook_poll_event()
 {
 	*polleventJumpAddress = oPollEvent;
 }

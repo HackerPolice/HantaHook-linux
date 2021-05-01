@@ -17,9 +17,6 @@
 #include <string>
 #include <SDL2/SDL.h>
 
-typedef void (*SDL_GL_SwapWindow_t)(SDL_Window *);
-typedef int (*SDL_PollEvent_t)(SDL_Event *);
-
 #include "imgui/imgui.h"
 #include "imgui/imgui_internal.h"
 #include "imgui/examples/libs/gl3w/GL/gl3w.h"
@@ -40,6 +37,7 @@ namespace Global{
     
     // all the interfaces
     inline ICvar *cvar = nullptr;
+    
 };
 
 using namespace Global;
