@@ -1,0 +1,3 @@
+/mnt/sdb1/projects/Csgo/HantaHook-linux/CMakeFiles/rebuild_cache.dir
+/mnt/sdb1/projects/Csgo/HantaHook-linux/CMakeFiles/edit_cache.dir
+/mnt/sdb1/projects/Csgo/HantaHook-linux/CMakeFiles/HantaHook.dir

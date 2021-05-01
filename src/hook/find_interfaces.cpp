@@ -10,7 +10,7 @@ void Hook::Interfaces::show_address(){
         return;
 
 
-    cvar->ConsoleColorPrintf(ColorRGBA(125, 75, 125), XORSTR("  [Cvar] | %p \n"), cvar);
+    cvar->ConsoleColorPrintf(ColorRGBA(125, 85, 125), XORSTR("  [Cvar] | %p \n"), cvar);
 
 
 }

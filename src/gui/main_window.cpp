@@ -66,34 +66,34 @@ void Gui::render_main_window(){
 	                 ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar | ImGuiConfigFlags_NoMouseCursorChange)) {
 		
 		
-		BgDecorations();
-		Tabs();
-		SubTabs();
+		// BgDecorations();
+		// Tabs();
+		// SubTabs();
 
 
-		// cvar->ConsoleDPrintf(XORSTR("Selected tab : %d\n"), tabs);
-		switch (tabs) {
-			case AimbotTab:
-				AimBotTab();
-				break;
-			case AntiAimTab:
-				// HvH::RenderAimware(pos, draw, subtabs);
-				break;
-			case VisualTab:
-				// Visuals::RenderAimware(pos, draw, subtabs);
-				break;
-			case SkinsModelsTab:
-				// SkinsAndModel::RenderAimware(pos, draw, subtabs);
-				break;
-			case MiscTab:
-				// Misc::RenderAimware(pos, draw, subtabs);
-				break;
-			case Config:
-				// Configs::RenderAimware(pos, draw, subtabs);
-				subtabs = 0;
-			default:
-				break;
-		}
+		// // cvar->ConsoleDPrintf(XORSTR("Selected tab : %d\n"), tabs);
+		// switch (tabs) {
+		// 	case AimbotTab:
+		// 		AimBotTab();
+		// 		break;
+		// 	case AntiAimTab:
+		// 		// HvH::RenderAimware(pos, draw, subtabs);
+		// 		break;
+		// 	case VisualTab:
+		// 		// Visuals::RenderAimware(pos, draw, subtabs);
+		// 		break;
+		// 	case SkinsModelsTab:
+		// 		// SkinsAndModel::RenderAimware(pos, draw, subtabs);
+		// 		break;
+		// 	case MiscTab:
+		// 		// Misc::RenderAimware(pos, draw, subtabs);
+		// 		break;
+		// 	case Config:
+		// 		// Configs::RenderAimware(pos, draw, subtabs);
+		// 		subtabs = 0;
+		// 	default:
+		// 		break;
+		// }
 
 		ImGui::End();
 	}

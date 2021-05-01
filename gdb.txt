@@ -1,0 +1,2493 @@
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 21580]
+[New LWP 21581]
+[New LWP 21582]
+[New LWP 21583]
+[New LWP 21585]
+[New LWP 21621]
+[New LWP 21875]
+[New LWP 21919]
+[New LWP 21949]
+[New LWP 21950]
+[New LWP 21951]
+[New LWP 21952]
+[New LWP 21954]
+[New LWP 21955]
+[New LWP 21957]
+[New LWP 21958]
+[New LWP 21959]
+[New LWP 21960]
+[New LWP 21961]
+[New LWP 21963]
+[New LWP 21964]
+[New LWP 21965]
+[New LWP 21966]
+[New LWP 21971]
+[New LWP 21972]
+[New LWP 21973]
+[New LWP 21974]
+[New LWP 21977]
+[New LWP 21980]
+[New LWP 21981]
+[New LWP 21982]
+[New LWP 21983]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: File "/usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py
+line to your configuration file "/root/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/root/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 21983: generic error
+warning: File "/usr/share/gdb/auto-load/usr/lib/libglib-2.0.so.0.6600.7-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+0x00007f031a96e37f in poll () from /usr/lib/libc.so.6
+$1 = (void *) 0x31704000
+[Inferior 1 (process 21577) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 21580]
+[New LWP 21581]
+[New LWP 21582]
+[New LWP 21583]
+[New LWP 21585]
+[New LWP 21621]
+[New LWP 21875]
+[New LWP 21919]
+[New LWP 21949]
+[New LWP 21950]
+[New LWP 21951]
+[New LWP 21952]
+[New LWP 21954]
+[New LWP 21955]
+[New LWP 21957]
+[New LWP 21958]
+[New LWP 21959]
+[New LWP 21960]
+[New LWP 21961]
+[New LWP 21963]
+[New LWP 21964]
+[New LWP 21965]
+[New LWP 21966]
+[New LWP 21971]
+[New LWP 21972]
+[New LWP 21973]
+[New LWP 21974]
+[New LWP 21977]
+[New LWP 21980]
+[New LWP 21981]
+[New LWP 21982]
+[New LWP 21983]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 21983: generic error
+0x00007f031a941125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+
+Thread 1 "csgo_linux64" received signal SIGABRT, Aborted.
+0x00007f031a8b6ef5 in raise () from /usr/lib/libc.so.6
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlclose) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 21577) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 23758]
+[New LWP 23759]
+[New LWP 23760]
+[New LWP 23761]
+[New LWP 23763]
+[New LWP 23792]
+[New LWP 23798]
+[New LWP 23799]
+[New LWP 23801]
+[New LWP 23802]
+[New LWP 23803]
+[New LWP 23804]
+[New LWP 23806]
+[New LWP 23807]
+[New LWP 23809]
+[New LWP 23810]
+[New LWP 23811]
+[New LWP 23812]
+[New LWP 23813]
+[New LWP 23815]
+[New LWP 23816]
+[New LWP 23817]
+[New LWP 23818]
+[New LWP 23819]
+[New LWP 23820]
+[New LWP 23821]
+[New LWP 23822]
+[New LWP 23825]
+[New LWP 23827]
+[New LWP 23828]
+[New LWP 23829]
+[New LWP 23830]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: File "/usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py
+line to your configuration file "/root/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/root/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 23830: generic error
+warning: File "/usr/share/gdb/auto-load/usr/lib/libglib-2.0.so.0.6600.7-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+0x00007ff79410b37f in poll () from /usr/lib/libc.so.6
+$1 = (void *) 0x32255a00
+[Inferior 1 (process 23757) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 23758]
+[New LWP 23759]
+[New LWP 23760]
+[New LWP 23761]
+[New LWP 23763]
+[New LWP 23792]
+[New LWP 23798]
+[New LWP 23799]
+[New LWP 23801]
+[New LWP 23802]
+[New LWP 23803]
+[New LWP 23804]
+[New LWP 23806]
+[New LWP 23807]
+[New LWP 23809]
+[New LWP 23810]
+[New LWP 23811]
+[New LWP 23812]
+[New LWP 23813]
+[New LWP 23815]
+[New LWP 23816]
+[New LWP 23817]
+[New LWP 23818]
+[New LWP 23819]
+[New LWP 23820]
+[New LWP 23821]
+[New LWP 23822]
+[New LWP 23825]
+[New LWP 23827]
+[New LWP 23828]
+[New LWP 23829]
+[New LWP 23830]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 23830: generic error
+0x00007ff7940de125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+
+Thread 1 "csgo_linux64" received signal SIGABRT, Aborted.
+0x00007ff794053ef5 in raise () from /usr/lib/libc.so.6
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlclose) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 23757) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 24084]
+[New LWP 24085]
+[New LWP 24086]
+[New LWP 24087]
+[New LWP 24089]
+[New LWP 24108]
+[New LWP 24139]
+[New LWP 24143]
+[New LWP 24148]
+[New LWP 24149]
+[New LWP 24150]
+[New LWP 24151]
+[New LWP 24172]
+[New LWP 24173]
+[New LWP 24175]
+[New LWP 24176]
+[New LWP 24177]
+[New LWP 24178]
+[New LWP 24179]
+[New LWP 24181]
+[New LWP 24182]
+[New LWP 24183]
+[New LWP 24184]
+[New LWP 24185]
+[New LWP 24186]
+[New LWP 24187]
+[New LWP 24188]
+[New LWP 24191]
+[New LWP 24193]
+[New LWP 24194]
+[New LWP 24195]
+[New LWP 24197]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: File "/usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py
+line to your configuration file "/root/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/root/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 24197: generic error
+warning: File "/usr/share/gdb/auto-load/usr/lib/libglib-2.0.so.0.6600.7-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+0x00007f4145a6337f in poll () from /usr/lib/libc.so.6
+$1 = (void *) 0x1031da00
+[Inferior 1 (process 24082) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 24084]
+[New LWP 24085]
+[New LWP 24086]
+[New LWP 24087]
+[New LWP 24089]
+[New LWP 24108]
+[New LWP 24139]
+[New LWP 24143]
+[New LWP 24148]
+[New LWP 24149]
+[New LWP 24150]
+[New LWP 24151]
+[New LWP 24172]
+[New LWP 24173]
+[New LWP 24175]
+[New LWP 24176]
+[New LWP 24177]
+[New LWP 24178]
+[New LWP 24179]
+[New LWP 24181]
+[New LWP 24182]
+[New LWP 24183]
+[New LWP 24184]
+[New LWP 24185]
+[New LWP 24186]
+[New LWP 24187]
+[New LWP 24188]
+[New LWP 24191]
+[New LWP 24193]
+[New LWP 24194]
+[New LWP 24195]
+[New LWP 24197]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 24197: generic error
+0x00007f4145a36125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 24082) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 24084]
+[New LWP 24085]
+[New LWP 24086]
+[New LWP 24087]
+[New LWP 24089]
+[New LWP 24108]
+[New LWP 24139]
+[New LWP 24143]
+[New LWP 24148]
+[New LWP 24149]
+[New LWP 24150]
+[New LWP 24151]
+[New LWP 24172]
+[New LWP 24173]
+[New LWP 24175]
+[New LWP 24176]
+[New LWP 24177]
+[New LWP 24178]
+[New LWP 24179]
+[New LWP 24181]
+[New LWP 24182]
+[New LWP 24183]
+[New LWP 24184]
+[New LWP 24185]
+[New LWP 24186]
+[New LWP 24187]
+[New LWP 24188]
+[New LWP 24191]
+[New LWP 24193]
+[New LWP 24194]
+[New LWP 24195]
+[New LWP 24197]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: File "/usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py
+line to your configuration file "/root/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/root/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 24197: generic error
+warning: File "/usr/share/gdb/auto-load/usr/lib/libglib-2.0.so.0.6600.7-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+0x00007f4145a6337f in poll () from /usr/lib/libc.so.6
+$1 = (void *) 0x279d1500
+[Inferior 1 (process 24082) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 24084]
+[New LWP 24085]
+[New LWP 24086]
+[New LWP 24087]
+[New LWP 24089]
+[New LWP 24108]
+[New LWP 24139]
+[New LWP 24143]
+[New LWP 24148]
+[New LWP 24149]
+[New LWP 24150]
+[New LWP 24151]
+[New LWP 24172]
+[New LWP 24173]
+[New LWP 24175]
+[New LWP 24176]
+[New LWP 24177]
+[New LWP 24178]
+[New LWP 24179]
+[New LWP 24181]
+[New LWP 24182]
+[New LWP 24183]
+[New LWP 24184]
+[New LWP 24185]
+[New LWP 24186]
+[New LWP 24187]
+[New LWP 24188]
+[New LWP 24191]
+[New LWP 24193]
+[New LWP 24194]
+[New LWP 24195]
+[New LWP 24197]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 24197: generic error
+0x00007f4145a36125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 24082) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 24084]
+[New LWP 24085]
+[New LWP 24086]
+[New LWP 24087]
+[New LWP 24089]
+[New LWP 24108]
+[New LWP 24139]
+[New LWP 24143]
+[New LWP 24148]
+[New LWP 24149]
+[New LWP 24150]
+[New LWP 24151]
+[New LWP 24172]
+[New LWP 24173]
+[New LWP 24175]
+[New LWP 24176]
+[New LWP 24177]
+[New LWP 24178]
+[New LWP 24179]
+[New LWP 24181]
+[New LWP 24182]
+[New LWP 24183]
+[New LWP 24184]
+[New LWP 24185]
+[New LWP 24186]
+[New LWP 24187]
+[New LWP 24188]
+[New LWP 24191]
+[New LWP 24193]
+[New LWP 24194]
+[New LWP 24195]
+[New LWP 24197]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: File "/usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.28-gdb.py
+line to your configuration file "/root/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/root/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 24197: generic error
+warning: File "/usr/share/gdb/auto-load/usr/lib/libglib-2.0.so.0.6600.7-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load/usr/lib64/:/usr/lib64/".
+0x00007f4145a6337f in poll () from /usr/lib/libc.so.6
+$1 = (void *) 0x279d1500
+[Inferior 1 (process 24082) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 4606]
+[New LWP 4607]
+[New LWP 4608]
+[New LWP 4609]
+[New LWP 4611]
+[New LWP 4638]
+[New LWP 4656]
+[New LWP 4658]
+[New LWP 4670]
+[New LWP 4671]
+[New LWP 4672]
+[New LWP 4673]
+[New LWP 4675]
+[New LWP 4676]
+[New LWP 4677]
+[New LWP 4678]
+[New LWP 4679]
+[New LWP 4680]
+[New LWP 4681]
+[New LWP 4683]
+[New LWP 4684]
+[New LWP 4685]
+[New LWP 4686]
+[New LWP 4687]
+[New LWP 4688]
+[New LWP 4689]
+[New LWP 4690]
+[New LWP 4693]
+[New LWP 4695]
+[New LWP 4696]
+[New LWP 4697]
+[New LWP 4698]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007fb715ca7125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x193c7a00
+[Inferior 1 (process 4598) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 4606]
+[New LWP 4607]
+[New LWP 4608]
+[New LWP 4609]
+[New LWP 4611]
+[New LWP 4638]
+[New LWP 4656]
+[New LWP 4658]
+[New LWP 4670]
+[New LWP 4671]
+[New LWP 4672]
+[New LWP 4673]
+[New LWP 4675]
+[New LWP 4676]
+[New LWP 4677]
+[New LWP 4678]
+[New LWP 4679]
+[New LWP 4680]
+[New LWP 4681]
+[New LWP 4683]
+[New LWP 4684]
+[New LWP 4685]
+[New LWP 4686]
+[New LWP 4687]
+[New LWP 4688]
+[New LWP 4689]
+[New LWP 4690]
+[New LWP 4693]
+[New LWP 4695]
+[New LWP 4696]
+[New LWP 4697]
+[New LWP 4698]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 4698: generic error
+0x00007fb715ca7125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 4598) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 4606]
+[New LWP 4607]
+[New LWP 4608]
+[New LWP 4609]
+[New LWP 4611]
+[New LWP 4638]
+[New LWP 4656]
+[New LWP 4658]
+[New LWP 4670]
+[New LWP 4671]
+[New LWP 4672]
+[New LWP 4673]
+[New LWP 4675]
+[New LWP 4676]
+[New LWP 4677]
+[New LWP 4678]
+[New LWP 4679]
+[New LWP 4680]
+[New LWP 4681]
+[New LWP 4683]
+[New LWP 4684]
+[New LWP 4685]
+[New LWP 4686]
+[New LWP 4687]
+[New LWP 4688]
+[New LWP 4689]
+[New LWP 4690]
+[New LWP 4693]
+[New LWP 4695]
+[New LWP 4696]
+[New LWP 4697]
+[New LWP 4698]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007fb715ca7125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 5545]
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007fb6f087af4e in ?? () from /usr/lib/libgspell-1.so
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlopen) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 4598) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 5590]
+[New LWP 5591]
+[New LWP 5592]
+[New LWP 5593]
+[New LWP 5595]
+[New LWP 5624]
+[New LWP 5626]
+[New LWP 5628]
+[New LWP 5637]
+[New LWP 5638]
+[New LWP 5639]
+[New LWP 5640]
+[New LWP 5642]
+[New LWP 5643]
+[New LWP 5644]
+[New LWP 5645]
+[New LWP 5646]
+[New LWP 5647]
+[New LWP 5648]
+[New LWP 5650]
+[New LWP 5651]
+[New LWP 5652]
+[New LWP 5653]
+[New LWP 5654]
+[New LWP 5655]
+[New LWP 5656]
+[New LWP 5657]
+[New LWP 5660]
+[New LWP 5662]
+[New LWP 5663]
+[New LWP 5664]
+[New LWP 5665]
+[New LWP 5694]
+[New LWP 5695]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f47a749e9ab in ?? () from /mnt/sdb1/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/bin/linux64/panorama_client.so
+[New LWP 5753]
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f47976fcf4e in ?? () from /usr/lib/libgstrtsp-0.10.so
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlopen) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 5589) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 5861]
+[New LWP 5862]
+[New LWP 5863]
+[New LWP 5864]
+[New LWP 5866]
+[New LWP 5889]
+[New LWP 5916]
+[New LWP 5917]
+[New LWP 5920]
+[New LWP 5921]
+[New LWP 5922]
+[New LWP 5923]
+[New LWP 5925]
+[New LWP 5926]
+[New LWP 5928]
+[New LWP 5929]
+[New LWP 5930]
+[New LWP 5931]
+[New LWP 5932]
+[New LWP 5934]
+[New LWP 5935]
+[New LWP 5936]
+[New LWP 5937]
+[New LWP 5938]
+[New LWP 5939]
+[New LWP 5940]
+[New LWP 5941]
+[New LWP 5944]
+[New LWP 5946]
+[New LWP 5947]
+[New LWP 5948]
+[New LWP 5949]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f9652a8a125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 6027]
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f962d343f4c in ?? () from /usr/lib/libtcmalloc.so
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlopen) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 5857) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x36edc500
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 17579: generic error
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f281950da2f in __memset_avx2_unaligned_erms () from /usr/lib/libc.so.6
+$1 = (void *) 0x24fbd500
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 17579: generic error
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x24fbd500
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 17579: generic error
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x24fbd500
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 17579: generic error
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 17499]
+[New LWP 17500]
+[New LWP 17501]
+[New LWP 17502]
+[New LWP 17504]
+[New LWP 17522]
+[New LWP 17533]
+[New LWP 17536]
+[New LWP 17547]
+[New LWP 17548]
+[New LWP 17549]
+[New LWP 17550]
+[New LWP 17552]
+[New LWP 17553]
+[New LWP 17556]
+[New LWP 17557]
+[New LWP 17558]
+[New LWP 17559]
+[New LWP 17560]
+[New LWP 17562]
+[New LWP 17563]
+[New LWP 17564]
+[New LWP 17565]
+[New LWP 17568]
+[New LWP 17569]
+[New LWP 17570]
+[New LWP 17571]
+[New LWP 17574]
+[New LWP 17576]
+[New LWP 17577]
+[New LWP 17578]
+[New LWP 17579]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f2819470125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x24fbd500
+[Inferior 1 (process 17497) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19211]
+[New LWP 19212]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x32d93000
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 19668]
+[New LWP 19669]
+[New LWP 19685]
+[New LWP 19686]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 19686: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 19668]
+[New LWP 19669]
+[New LWP 19752]
+[New LWP 19753]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x32d93000
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 19875]
+[New LWP 19876]
+[New LWP 19877]
+[New LWP 19878]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 19878: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 19875]
+[New LWP 19876]
+[New LWP 19877]
+[New LWP 19878]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f323c49708f in ?? () from /mnt/sdb1/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/bin/linux64/panorama_client.so
+$1 = (void *) 0x32d93000
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 20448]
+[New LWP 20449]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 20449: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 20883]
+[New LWP 20884]
+[New LWP 20895]
+[New LWP 20896]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x32345000
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 21012]
+[New LWP 21013]
+[New LWP 21032]
+[New LWP 21033]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 21033: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 21211]
+[New LWP 21212]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x7f31e991e000
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 21300]
+[New LWP 21301]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 21301: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 22729]
+[New LWP 22730]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x37af2500
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23355]
+[New LWP 23356]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 23356: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23394]
+[New LWP 23395]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x37af2500
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23523]
+[New LWP 23524]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 23524: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23594]
+[New LWP 23595]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x37af2500
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23779]
+[New LWP 23780]
+[New LWP 23805]
+[New LWP 23806]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 23806: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23779]
+[New LWP 23780]
+[New LWP 23847]
+[New LWP 23848]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x37af2500
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23951]
+[New LWP 23952]
+[New LWP 24036]
+[New LWP 24037]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 24037: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 23951]
+[New LWP 23952]
+[New LWP 24036]
+[New LWP 24037]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f32518c89ba in __futex_abstimed_wait_common64 () from /usr/lib/libpthread.so.0
+$1 = (void *) 0x37af2500
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 30864]
+[New LWP 30865]
+[New LWP 30901]
+[New LWP 30902]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 30902: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 30947]
+[New LWP 30948]
+[New LWP 30993]
+[New LWP 30994]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = (void *) 0x37af2500
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 31230]
+[New LWP 31231]
+[New LWP 31296]
+[New LWP 31297]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 31297: generic error
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 19153]
+[New LWP 19154]
+[New LWP 19155]
+[New LWP 19156]
+[New LWP 19158]
+[New LWP 19178]
+[New LWP 19180]
+[New LWP 19181]
+[New LWP 19190]
+[New LWP 19191]
+[New LWP 19192]
+[New LWP 19193]
+[New LWP 19195]
+[New LWP 19196]
+[New LWP 19197]
+[New LWP 19198]
+[New LWP 19199]
+[New LWP 19200]
+[New LWP 19201]
+[New LWP 19203]
+[New LWP 19204]
+[New LWP 19205]
+[New LWP 19206]
+[New LWP 19207]
+[New LWP 19208]
+[New LWP 19209]
+[New LWP 19210]
+[New LWP 19213]
+[New LWP 19215]
+[New LWP 19216]
+[New LWP 19217]
+[New LWP 19218]
+[New LWP 31296]
+[New LWP 31297]
+[New LWP 31372]
+[New LWP 31373]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f3251b78125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 31418]
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f322c4f0f3e in ?? () from /usr/lib/libmono-profiler-aot.so
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlopen) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 19151) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 31488]
+[New LWP 31489]
+[New LWP 31490]
+[New LWP 31491]
+[New LWP 31493]
+[New LWP 31510]
+[New LWP 31514]
+[New LWP 31515]
+[New LWP 31519]
+[New LWP 31520]
+[New LWP 31521]
+[New LWP 31522]
+[New LWP 31524]
+[New LWP 31525]
+[New LWP 31526]
+[New LWP 31527]
+[New LWP 31528]
+[New LWP 31529]
+[New LWP 31530]
+[New LWP 31532]
+[New LWP 31533]
+[New LWP 31534]
+[New LWP 31535]
+[New LWP 31536]
+[New LWP 31537]
+[New LWP 31538]
+[New LWP 31539]
+[New LWP 31542]
+[New LWP 31544]
+[New LWP 31545]
+[New LWP 31546]
+[New LWP 31547]
+[New LWP 31551]
+[New LWP 31552]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f531f439125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 31615]
+[LWP 31615 exited]
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f52f0df4f3e in ?? () from /usr/lib/libqwt.so
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlopen) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 31487) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+Argument required (process-id to attach).
+No symbol table is loaded.  Use the "file" command.
+You can't do that without a process to debug.
+The program is not being run.
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 32388]
+[New LWP 32389]
+[New LWP 32390]
+[New LWP 32391]
+[New LWP 32393]
+[New LWP 32417]
+[New LWP 32421]
+[New LWP 32422]
+[New LWP 32425]
+[New LWP 32426]
+[New LWP 32427]
+[New LWP 32428]
+[New LWP 32430]
+[New LWP 32431]
+[New LWP 32432]
+[New LWP 32433]
+[New LWP 32434]
+[New LWP 32435]
+[New LWP 32436]
+[New LWP 32438]
+[New LWP 32439]
+[New LWP 32440]
+[New LWP 32441]
+[New LWP 32442]
+[New LWP 32443]
+[New LWP 32444]
+[New LWP 32445]
+[New LWP 32448]
+[New LWP 32450]
+[New LWP 32451]
+[New LWP 32452]
+[New LWP 32453]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f016f5d3125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 32573]
+[LWP 32573 exited]
+$1 = (void *) 0x3175ca00
+[Inferior 1 (process 32373) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 32388]
+[New LWP 32389]
+[New LWP 32390]
+[New LWP 32391]
+[New LWP 32393]
+[New LWP 32417]
+[New LWP 32421]
+[New LWP 32422]
+[New LWP 32425]
+[New LWP 32426]
+[New LWP 32427]
+[New LWP 32428]
+[New LWP 32430]
+[New LWP 32431]
+[New LWP 32432]
+[New LWP 32433]
+[New LWP 32434]
+[New LWP 32435]
+[New LWP 32436]
+[New LWP 32438]
+[New LWP 32439]
+[New LWP 32440]
+[New LWP 32441]
+[New LWP 32442]
+[New LWP 32443]
+[New LWP 32444]
+[New LWP 32445]
+[New LWP 32448]
+[New LWP 32450]
+[New LWP 32451]
+[New LWP 32452]
+[New LWP 32453]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 32453: generic error
+0x00007f016f5d3125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f0149d36c9c in ?? ()
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlclose) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 32373) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+Unable to attach: program terminated with signal SIGKILL, Killed.
+No symbol table is loaded.  Use the "file" command.
+You can't do that without a process to debug.
+The program is not being run.
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 32822]
+[New LWP 32823]
+[New LWP 32824]
+[New LWP 32825]
+[New LWP 32827]
+[New LWP 32851]
+[New LWP 32859]
+[New LWP 32860]
+[New LWP 32862]
+[New LWP 32863]
+[New LWP 32864]
+[New LWP 32865]
+[New LWP 32867]
+[New LWP 32868]
+[New LWP 32869]
+[New LWP 32870]
+[New LWP 32871]
+[New LWP 32872]
+[New LWP 32873]
+[New LWP 32875]
+[New LWP 32876]
+[New LWP 32877]
+[New LWP 32878]
+[New LWP 32879]
+[New LWP 32880]
+[New LWP 32881]
+[New LWP 32882]
+[New LWP 32885]
+[New LWP 32887]
+[New LWP 32888]
+[New LWP 32889]
+[New LWP 32890]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f2a10e2c125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 32952]
+[LWP 32952 exited]
+$1 = (void *) 0x2eea3000
+[Inferior 1 (process 32818) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 32822]
+[New LWP 32823]
+[New LWP 32824]
+[New LWP 32825]
+[New LWP 32827]
+[New LWP 32851]
+[New LWP 32859]
+[New LWP 32860]
+[New LWP 32862]
+[New LWP 32863]
+[New LWP 32864]
+[New LWP 32865]
+[New LWP 32867]
+[New LWP 32868]
+[New LWP 32869]
+[New LWP 32870]
+[New LWP 32871]
+[New LWP 32872]
+[New LWP 32873]
+[New LWP 32875]
+[New LWP 32876]
+[New LWP 32877]
+[New LWP 32878]
+[New LWP 32879]
+[New LWP 32880]
+[New LWP 32881]
+[New LWP 32882]
+[New LWP 32885]
+[New LWP 32887]
+[New LWP 32888]
+[New LWP 32889]
+[New LWP 32890]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 32890: generic error
+0x00007f2a10e2c125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f29eb70a7ee in ?? ()
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlclose) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 32818) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+Unable to attach: program terminated with signal SIGSEGV, Segmentation fault.
+No symbol table is loaded.  Use the "file" command.
+No symbol table is loaded.  Use the "file" command.
+You can't do that without a process to debug.
+You can't do that without a process to debug.
+You can't do that without a process to debug.
+The program is not being run.
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 33106]
+[New LWP 33107]
+[New LWP 33108]
+[New LWP 33109]
+[New LWP 33111]
+[New LWP 33140]
+[New LWP 33141]
+[New LWP 33142]
+[New LWP 33144]
+[New LWP 33145]
+[New LWP 33146]
+[New LWP 33147]
+[New LWP 33149]
+[New LWP 33150]
+[New LWP 33151]
+[New LWP 33152]
+[New LWP 33153]
+[New LWP 33154]
+[New LWP 33155]
+[New LWP 33157]
+[New LWP 33158]
+[New LWP 33159]
+[New LWP 33160]
+[New LWP 33161]
+[New LWP 33162]
+[New LWP 33163]
+[New LWP 33164]
+[New LWP 33167]
+[New LWP 33169]
+[New LWP 33170]
+[New LWP 33171]
+[New LWP 33174]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f61fdef8125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+[New LWP 33238]
+[LWP 33238 exited]
+$1 = (void *) 0x37daf500
+[Inferior 1 (process 33105) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 33106]
+[New LWP 33107]
+[New LWP 33108]
+[New LWP 33109]
+[New LWP 33111]
+[New LWP 33140]
+[New LWP 33141]
+[New LWP 33142]
+[New LWP 33144]
+[New LWP 33145]
+[New LWP 33146]
+[New LWP 33147]
+[New LWP 33149]
+[New LWP 33150]
+[New LWP 33151]
+[New LWP 33152]
+[New LWP 33153]
+[New LWP 33154]
+[New LWP 33155]
+[New LWP 33157]
+[New LWP 33158]
+[New LWP 33159]
+[New LWP 33160]
+[New LWP 33161]
+[New LWP 33162]
+[New LWP 33163]
+[New LWP 33164]
+[New LWP 33167]
+[New LWP 33169]
+[New LWP 33170]
+[New LWP 33171]
+[New LWP 33174]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 33174: generic error
+0x00007f61fdef8125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+
+Thread 1 "csgo_linux64" received signal SIGSEGV, Segmentation fault.
+0x00007f61cf31b7fe in ?? ()
+The program being debugged was signaled while in a function called from GDB.
+GDB remains in the frame where the signal was received.
+To change this behavior use "set unwindonsignal on".
+Evaluation of the expression containing the function
+(dlclose) will be abandoned.
+When the function is done executing, GDB will silently stop.
+[Inferior 1 (process 33105) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 33355]
+[New LWP 33356]
+[New LWP 33357]
+[New LWP 33358]
+[New LWP 33360]
+[New LWP 33407]
+[New LWP 33409]
+[New LWP 33410]
+[New LWP 33412]
+[New LWP 33413]
+[New LWP 33414]
+[New LWP 33415]
+[New LWP 33417]
+[New LWP 33418]
+[New LWP 33419]
+[New LWP 33420]
+[New LWP 33421]
+[New LWP 33422]
+[New LWP 33423]
+[New LWP 33425]
+[New LWP 33426]
+[New LWP 33427]
+[New LWP 33428]
+[New LWP 33429]
+[New LWP 33430]
+[New LWP 33431]
+[New LWP 33432]
+[New LWP 33435]
+[New LWP 33438]
+[New LWP 33439]
+[New LWP 33440]
+[New LWP 33446]
+warning: Could not load shared library symbols for bin/linux64/launcher_client.so.
+Do you need "set solib-search-path" or "set sysroot"?
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x00007f488e7769ba in __futex_abstimed_wait_common64 () from /usr/lib/libpthread.so.0
+[New LWP 33521]
+[LWP 33521 exited]
+$1 = (void *) 0x175a8000
+[Inferior 1 (process 33352) detached]
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+[New LWP 33355]
+[New LWP 33356]
+[New LWP 33357]
+[New LWP 33358]
+[New LWP 33360]
+[New LWP 33407]
+[New LWP 33409]
+[New LWP 33410]
+[New LWP 33412]
+[New LWP 33413]
+[New LWP 33414]
+[New LWP 33415]
+[New LWP 33417]
+[New LWP 33418]
+[New LWP 33419]
+[New LWP 33420]
+[New LWP 33421]
+[New LWP 33422]
+[New LWP 33423]
+[New LWP 33425]
+[New LWP 33426]
+[New LWP 33427]
+[New LWP 33428]
+[New LWP 33429]
+[New LWP 33430]
+[New LWP 33431]
+[New LWP 33432]
+[New LWP 33435]
+[New LWP 33438]
+[New LWP 33439]
+[New LWP 33440]
+[New LWP 33446]
+warning: Could not load shared library symbols for 2 libraries, e.g. bin/linux64/launcher_client.so.
+Use the "info sharedlibrary" command to see the complete listing.
+Do you need "set solib-search-path" or "set sysroot"?
+Error while reading shared library symbols for /usr/lib/libpthread.so.0:
+Cannot find user-level thread for LWP 33446: generic error
+0x00007f488ea26125 in clock_nanosleep@GLIBC_2.2.5 () from /usr/lib/libc.so.6
+$1 = 0
+$2 = 0
+[Inferior 1 (process 33352) detached]

@@ -82,6 +82,7 @@ function build(){
 
 function load(){
   # Check_For_logDirectory
+  
   csgo_pid=$(pidof csgo_linux64)
 
   if [ -z "$csgo_pid" ]; 
@@ -96,7 +97,7 @@ function load(){
   # You may also want to consider using -nobreakpad in your launch options.
   sudo rm -rf /tmp/dumps           # Remove if it exists
   sudo mkdir --mode=000 /tmp/dumps # Make it as root with no permissions
-
+  
   if [ ! -f .build_id ]; then
     echo "Build ID not found. Please rebuild using the './HantaHook -b' script."
     exit 1
@@ -104,6 +105,8 @@ function load(){
 
   filename=$(cat .build_id)
 
+  export PATH="./GDB:$PATH" # using Custom GDB
+  
   # Credit: Aixxe @ aixxe.net
   if grep -q "$filename" /proc/"$csgo_pid"/maps; then
     echo_orange "Already injected, aborting..."

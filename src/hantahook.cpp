@@ -16,7 +16,7 @@ static void Main_Thread();
 /* Entrypoint to the Library. Called when loading */
 int __attribute__((constructor)) Start()
 {
-	std::thread (Main_Thread).detach();
+	Main_Thread();
 	// main.detach();
 
 	// cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nHantaHook Successfully loaded.\n"));
@@ -27,13 +27,15 @@ int __attribute__((constructor)) Start()
 void __attribute__((destructor)) Shutdown()
 {
 	cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("HantaHook Successfully unloaded.\n"));
+	cvar->FindVar(XORSTR("cl_mouseenable"))->SetValue(1);
 	Hook::unhook();
 }
 
 static void Main_Thread(){
     
-	Hook::start_hooking();
+	std::thread(Hook::start_hooking).detach();
+	// Hook::start_hooking();
 	
-	cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("HantaHook Successfully loaded.\n"));
+	// cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("HantaHook Successfully loaded.\n"));
 	// cvar->ConsoleDPrintf(XORSTR("Done"));
 }

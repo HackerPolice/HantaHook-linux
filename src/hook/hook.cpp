@@ -1,9 +1,9 @@
 #include "../pch.hpp"
 
 void Hook::start_hooking(){
-    Hook_ImGui::hook_imgui();
     Interfaces::find_interfaces();
     Interfaces::show_address();
+    Hook_ImGui::hook_imgui();
 }
 
 void Hook::unhook(){

@@ -2,6 +2,14 @@
 
 static bool set_up_done = false;
 
+void Gui::log(){
+	ImGui::Text(XORSTR("%d"),cvar->FindVar(XORSTR("cl_mouseenable"))->GetInt());
+}
+void Gui::SetVisible(bool view){
+	settings::Gui::is_visible = view;
+	// SDL_ShowCursor(!settings::Gui::is_visible);
+}
+
 void Gui::set_up_color(){
 
     if (set_up_done)

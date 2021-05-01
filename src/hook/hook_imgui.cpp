@@ -1,5 +1,5 @@
 #include "../pch.hpp"
-
+#include <mutex>
 typedef int (*SDL_PollEvent_t)(SDL_Event *);
 
 uintptr_t oSwapWindow;
@@ -13,6 +13,7 @@ SDL_PollEvent_t oSDL_PollEvent;
 typedef int (*eventFilterFn)(void *, SDL_Event *);
 
 eventFilterFn origEventFilter;
+std::mutex drawMutex;
 
 static void HandleSDLEvent(SDL_Event *event)
 {
@@ -105,7 +106,7 @@ static void SwapWindow(SDL_Window *window)
 	double currentTime = time / 1000.0;
 	io.DeltaTime = lastTime > 0.0 ? (float) (currentTime - lastTime) : (float) (1.0f / 60.0f);
 
-	io.MouseDrawCursor = settings::Gui::is_visible;
+	// io.MouseDrawCursor = true;
 	io.WantCaptureMouse = settings::Gui::is_visible;
 	io.WantCaptureKeyboard = settings::Gui::is_visible;
 
@@ -121,14 +122,14 @@ static void SwapWindow(SDL_Window *window)
 		}
 	}
 
+	cvar->FindVar(XORSTR("cl_mouseenable"))->SetValue(!settings::Gui::is_visible);
 	if (io.WantCaptureMouse) {
 		int mx, my;
 		SDL_GetMouseState(&mx, &my);
 
 		io.MousePos = ImVec2((float) mx, (float) my);
 	}
-	SDL_ShowCursor(io.MouseDrawCursor ? 0 : 1);
-	cvar->FindVar(XORSTR("cl_mouseenable"))->SetValue(!settings::Gui::is_visible);
+	
 
 	Gui::set_up_color();
 
@@ -138,17 +139,17 @@ static void SwapWindow(SDL_Window *window)
 	ImGui::SetNextWindowBgAlpha(0.0f);
 	ImGuiStyle &style = ImGui::GetStyle();
 	style.WindowBorderSize = 0.0f;
-	ImGui::Begin(XORSTR("##default_frame"), (bool *) true,
+	if ( ImGui::Begin(XORSTR("##default_frame"), (bool *) settings::Gui::is_visible,
 	             ImGuiWindowFlags_AlwaysUseWindowPadding | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoMove |
 	             ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoSavedSettings | ImGuiColumnsFlags_NoBorder |
-	             ImGuiWindowFlags_NoResize);
-
+	             ImGuiWindowFlags_NoResize) ){
+		style.WindowBorderSize = 10.0f;
 		if (settings::Gui::is_visible){
 			Gui::render_main_window();
 		}
-		
-	ImGui::End();
-
+		Gui::log();
+		ImGui::End();
+	}
 	ImGui::EndFrame();
 	// }
 	ImGui::GetCurrentContext()->Font->DisplayOffset = ImVec2(0.f, 0.f);
@@ -162,9 +163,10 @@ static void SwapWindow(SDL_Window *window)
 
 static int PollEvent(SDL_Event *event)
 {
-	if ( (event->key.keysym.sym == SDLK_INSERT && event->type == SDL_KEYDOWN) )
-		settings::Gui::is_visible = !settings::Gui::is_visible;
-	
+	if ( (event->key.keysym.sym == SDLK_INSERT && event->type == SDL_KEYDOWN) ){
+		Gui::SetVisible(!settings::Gui::is_visible);
+	}
+		
 	return oSDL_PollEvent(event);
 }
 
